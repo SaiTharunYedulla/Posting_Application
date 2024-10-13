@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Tab</title>
+    <link href="Publish.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a New Post</h1>
+        <form id="post-form">
+            <div class="form-group">
+                <button type="button" class="btn btn-upload" id="upload-btn">
+                    Upload Photos/Videos
+                </button>
+                <input type="file" id="file-input" class="file-input" accept="image/*,video/*" multiple>
+            </div>
+
+            <div id="preview-grid" class="preview-grid"></div>
+
+            <div class="form-group">
+                <textarea id="post-description" class="textarea" rows="4" placeholder="Write your post description here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-submit">Post</button>
+            </div>
+
+            <div id="progress-container" class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+            </div>
+        </form>
+        <script src="publish.js"></script>
+    </div>
+</body>
+</html>
